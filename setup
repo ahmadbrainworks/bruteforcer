@@ -1,0 +1,30 @@
+#!/bin/bash
+# Python2 required for this to run.
+echo -e "\n"
+echo -e "\n"
+echo -e "\e[91m installing colorama"
+pip2 install colorama
+echo -e "\n"
+echo -e "\e[91m installing termcolor"
+echo -e "\n"
+pip2 install termcolor
+echo -e "\n"
+echo -e "\e[91m installing mechanize"
+echo -e "\n"
+pip2 install mechanize
+echo -e "\n"
+echo -e "\e[91m installing cookielib"
+echo -e "\n"
+pip2 install cookielib
+echo -e "\n"
+
+echo -e "\n"
+echo -e "\n"
+
+echo -e "\e[91m Removing SETUP file"
+rm setup
+echo -e "\n"
+echo -e "SETUP removed"
+echo -e "\n"
+echo -e "\e[91m Starting BruteFORCER..."
+./run

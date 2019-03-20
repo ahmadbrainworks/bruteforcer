@@ -1,0 +1,6 @@
+echo -e "\n"
+echo -e "\e[92m Running bruteFORCER...."
+echo -e "\n"
+echo -e "\e[92m [1] type: python2 generator.py to create wordlist"
+echo -e "\n"
+echo -e "\e[92m [2] type: python2 facebook.py to start Facebook brute forcing"
