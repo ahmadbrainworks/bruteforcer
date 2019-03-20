@@ -33,6 +33,6 @@ bash setup
   
   
                   === CONTACT ME ===
- Facebook: https://fb.me/ahmadbrainworks
- WHATSAPP: +2349036463761
+Facebook: https://fb.me/ahmadbrainworks
+WHATSAPP: +2349036463761
  
