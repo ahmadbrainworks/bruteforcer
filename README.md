@@ -25,6 +25,7 @@ apt install git
 
 git clone https://github.com/ahmadbrainworks/bruteforcer
 cd bruteforcer
+chmod +x *
 bash setup
 
 
