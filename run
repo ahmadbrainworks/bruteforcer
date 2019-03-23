@@ -1,6 +1,83 @@
+#! bin/bash
+
 echo -e "\n"
 echo -e "\e[92m Running bruteFORCER...."
 echo -e "\n"
-echo -e "\e[92m [1] type: python2 generator.py to create wordlist"
+pause (){
+read -p "Press [Enter] key to continue..." fackEnterKey
+}
+gen (){
+python2 generator
+pause
+}
+
+facebook (){
+python2 facebook
+pause
+}
+
+gmail (){
+python2 gmail
+pause
+}
+
+instagram (){
+echo -e "\e[91m NOT AVAILABLE FOR NOW.."
+pause
+}
+
+twitter (){
+echo -e "\e[91m NOT AVAILABLE FOR NOW..."
+pause
+echo -e "\e[0m"
+}
+
+
+
+
+show_menus () {
+clear
+cat bruteforcer.txt
+echo -e "\e[1m"
 echo -e "\n"
-echo -e "\e[92m [2] type: python2 facebook.py to start Facebook brute forcing"
+echo -e "\e[92m M A I N - M E N U"
+echo -e "\n"
+echo "[1] Generate wordlist"
+echo "[2] Facebook"
+echo "[3] Gmail"
+echo "[4] Instagram (coming soon)"
+echo "[5] Twitter (coming soon)"
+echo -e "\e[92m\e[41m[X] Exit"
+echo -e "\e[0m"
+echo -e "\e[0m"
+
+}
+echo -e "\e[0m"
+echo -e "\e[0m"
+
+read_options (){
+local choice
+read -p "Enter your choice [ 1 - X] " choice
+case $choice in
+1) gen ;;
+2) facebook ;;
+3) gmail ;;
+4) instagram ;;
+5) twitter ;;
+x) exit 0 ;;
+*) echo -e "\e[91m Error... " && sleep 2
+esac
+}
+ 
+echo -e "\n"
+
+trap '' SIGINT SIGQUIT SIGTSTP
+
+
+
+
+while true
+do
+show_menus
+read_options
+done
